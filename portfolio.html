@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keegan Henning | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html">KH</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <p>Exploring the intersection of AI, machine learning, and practical applications</p>
+            </div>
+        </section>
+
+        <section class="portfolio-categories">
+            <div class="container">
+                <ul class="category-filter">
+                    <li class="active" data-filter="all">All Projects</li>
+                    <li data-filter="research">Research</li>
+                    <li data-filter="development">Development</li>
+                    <li data-filter="academic">Academic</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Research Project -->
+                    <div class="project-card" id="research" data-category="research">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Deep Learning Research">
+                        </div>
+                        <div class="project-info">
+                            <h3>Deep Learning Research</h3>
+                            <span class="project-tags">Research, Machine Learning</span>
+                            <p>Research on state-of-the-art deep learning methodologies and their applications in real-world scenarios. Focused on optimizing neural network architectures for improved performance.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>As a Research Assistant at the University of South Dakota, I conducted research on deep learning methodologies and assisted in designing and implementing machine learning models.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fab fa-python"></i> Python</li>
+                                    <li><i class="fas fa-brain"></i> TensorFlow</li>
+                                    <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Optimized neural network architectures for improved performance and collaborated with faculty to explore state-of-the-art deep learning techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Application Project -->
+                    <div class="project-card" id="web-app" data-category="development">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Web Application">
+                        </div>
+                        <div class="project-info">
+                            <h3>Internal Web Application</h3>
+                            <span class="project-tags">Development, Full-Stack</span>
+                            <p>Full-stack development of an internal web application for Ziegler CAT during my internship, focusing on user experience and functionality.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>As a Program Analyst Intern, I handled both front-end and back-end development, designed user-friendly interfaces, and worked with APIs and SQL for data management.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                                    <li><i class="fab fa-js"></i> JavaScript</li>
+                                    <li><i class="fas fa-database"></i> SQL</li>
+                                    <li><i class="fab fa-microsoft"></i> .NET</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Created a functional internal web application that enhanced team efficiency and improved data management processes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Project -->
+                    <div class="project-card" data-category="academic">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="AI Classification">
+                        </div>
+                        <div class="project-info">
+                            <h3>Image Classification System</h3>
+                            <span class="project-tags">Academic, Machine Learning</span>
+                            <p>Developed an image classification system using supervised learning techniques as part of my AI specialization coursework.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>Led the project development, including dataset preparation, model training, and performance evaluation.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fab fa-python"></i> Python</li>
+                                    <li><i class="fas fa-brain"></i> Scikit-learn</li>
+                                    <li><i class="fas fa-chart-bar"></i> Data Visualization</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Achieved 92% accuracy in image classification with potential applications in automated sorting systems.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Project -->
+                    <div class="project-card" data-category="development">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Database Management">
+                        </div>
+                        <div class="project-info">
+                            <h3>SQL Data Management System</h3>
+                            <span class="project-tags">Development, Database</span>
+                            <p>Designed and implemented a comprehensive data management system using SQL Server Management Studio during my internship at Ziegler CAT.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>Responsible for data transfer, uploading, and management in SQL Server Management Studio with attention to detail.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fas fa-database"></i> SQL</li>
+                                    <li><i class="fas fa-server"></i> SQL Server</li>
+                                    <li><i class="fas fa-chart-pie"></i> Data Analysis</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Streamlined data management processes and improved data integrity for internal operations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Project -->
+                    <div class="project-card" data-category="academic">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Reinforcement Learning">
+                        </div>
+                        <div class="project-info">
+                            <h3>Reinforcement Learning Study</h3>
+                            <span class="project-tags">Academic, AI</span>
+                            <p>Academic research project exploring reinforcement learning algorithms and their applications in dynamic environments.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>Conducted research, implemented algorithms, and analyzed performance metrics for different reinforcement learning approaches.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fab fa-python"></i> Python</li>
+                                    <li><i class="fas fa-robot"></i> OpenAI Gym</li>
+                                    <li><i class="fas fa-project-diagram"></i> Algorithm Design</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Demonstrated effective learning patterns in simulated environments with potential applications in robotics and autonomous systems.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Project -->
+                    <div class="project-card" data-category="development">
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Mobile App">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mobile App Prototype</h3>
+                            <span class="project-tags">Development, Mobile</span>
+                            <p>Designed and developed a prototype mobile application for fitness tracking with customizable workout plans.</p>
+                            <div class="project-details">
+                                <h4>My Role</h4>
+                                <p>Led the app design and development process, focusing on user interface and core functionality.</p>
+                                
+                                <h4>Technologies Used</h4>
+                                <ul class="tech-stack">
+                                    <li><i class="fab fa-java"></i> Java</li>
+                                    <li><i class="fab fa-android"></i> Android Studio</li>
+                                    <li><i class="fas fa-mobile-alt"></i> UI/UX Design</li>
+                                </ul>
+                                
+                                <h4>Outcomes</h4>
+                                <p>Created a functional prototype demonstrating core features of a fitness tracking application.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2>Interested in collaborating?</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <a href="contact.html" class="btn">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Keegan Henning</h3>
+                    <p>Computer Science Graduate Student</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> kshenning31@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1-651-233-6081</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/keeganhenning" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Keegan Henning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
